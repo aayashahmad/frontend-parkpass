@@ -1,4 +1,4 @@
-// File: /Users/Personal projects/parkpass-new/frontend/app/layout.js
+// File: /Users/Personal projects/frontend-parkpass/frontend-parkpass/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

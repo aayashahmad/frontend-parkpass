@@ -15,7 +15,7 @@ const DistrictSelection = () => {
   useEffect(() => {
     const fetchDistricts = async () => {
       try {
-        const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001/api';
+        const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3002/api';
         const response = await fetch(`${API_URL}/districts`);
         const data = await response.json();
 

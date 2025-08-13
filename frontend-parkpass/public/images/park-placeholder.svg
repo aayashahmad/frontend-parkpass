@@ -1,0 +1,9 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0fdf4"/>
+  <rect x="50" y="50" width="300" height="200" fill="#dcfce7" stroke="#bbf7d0" stroke-width="2"/>
+  <circle cx="150" cy="100" r="20" fill="#22c55e"/>
+  <circle cx="250" cy="120" r="25" fill="#16a34a"/>
+  <circle cx="200" cy="180" r="15" fill="#15803d"/>
+  <rect x="170" y="200" width="60" height="40" fill="#166534"/>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#14532d">Park Image</text>
+</svg>

@@ -34,19 +34,19 @@ export const getImageUrl = (imagePath, fallback = null) => {
 /**
  * Get district image URL
  * @param {object} district - District object with image property
- * @returns {string} - Image URL or null for placeholder
+ * @returns {string} - Image URL or fallback to placeholder
  */
 export const getDistrictImageUrl = (district) => {
-  return getImageUrl(district?.image);
+  return getImageUrl(district?.image, '/images/district-placeholder.jpg');
 };
 
 /**
  * Get park image URL
  * @param {object} park - Park object with picture property
- * @returns {string} - Image URL or null for placeholder
+ * @returns {string} - Image URL or fallback to placeholder
  */
 export const getParkImageUrl = (park) => {
-  return getImageUrl(park?.picture);
+  return getImageUrl(park?.picture, '/images/park-placeholder.jpg');
 };
 
 /**
@@ -68,7 +68,7 @@ export const isImageAccessible = async (url) => {
 /**
  * Get image dimensions
  * @param {string} url - Image URL
- * @returns {Promise<{width: number, height: number}>} - Image dimensions
+ * @returns {Promise<Object>} - Image dimensions with width and height properties
  */
 export const getImageDimensions = (url) => {
   return new Promise((resolve, reject) => {

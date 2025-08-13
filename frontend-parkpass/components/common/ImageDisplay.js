@@ -19,7 +19,19 @@ const ImageDisplay = ({
   const [imageError, setImageError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  const imageUrl = getImageUrl(src);
+  // Determine fallback based on placeholder type
+  const getFallbackImage = () => {
+    switch (placeholder) {
+      case 'district':
+        return '/images/district-placeholder.jpg';
+      case 'park':
+        return '/images/park-placeholder.jpg';
+      default:
+        return '/images/park-placeholder.jpg';
+    }
+  };
+
+  const imageUrl = getImageUrl(src, getFallbackImage());
   const shouldShowPlaceholder = !imageUrl || imageError;
 
   const handleImageError = () => {

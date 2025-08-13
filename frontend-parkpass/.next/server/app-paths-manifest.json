@@ -1,8 +1,5 @@
 {
-  "/parks/page": "app/parks/page.js",
+  "/not-found": "app/not-found.js",
   "/admin/page": "app/admin/page.js",
-  "/admin/dashboard/page": "app/admin/dashboard/page.js",
-  "/admin/verify-otp/page": "app/admin/verify-otp/page.js",
-  "/admin/ticket-checker/page": "app/admin/ticket-checker/page.js",
-  "/admin/forgot-password/page": "app/admin/forgot-password/page.js"
+  "/admin/users/page": "app/admin/users/page.js"
 }
