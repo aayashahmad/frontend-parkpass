@@ -1,0 +1,2 @@
+GMAIL_USER=yourgmail@gmail.com
+GMAIL_PASS=your_gmail_app_password
