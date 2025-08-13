@@ -127,9 +127,11 @@ const handleSubmit = async (e) => {
               onChange={(e) => setRole(e.target.value)}
               required
             >
-              <option value="user">User</option>
+              {/* <option value="user">User</option> */}
               <option value="park-admin">Park Admin</option>
               <option value="super-admin">Super Admin</option>
+                  <option value="park-admin">Park Admin</option>
+                    <option value="ticket-checker">Ticket Checker</option>
             </select>
           </div>
           <div className="mb-6">
