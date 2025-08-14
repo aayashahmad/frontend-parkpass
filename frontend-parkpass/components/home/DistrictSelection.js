@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getDistrictImageUrl } from '../../utils/imageUtils';
 
 const DistrictSelection = () => {
   const [districts, setDistricts] = useState([]);
@@ -124,14 +125,11 @@ const DistrictSelection = () => {
             >
               <div className="relative h-56 w-full overflow-hidden">
                 <Image
-                  src={district.image && district.image !== 'no-photo.jpg' ?
-                    (district.image.startsWith('/') || district.image.startsWith('http') ?
-                      district.image :
-                      `/uploads/${district.image}`) :
-                    '/images/district-placeholder.jpg'}
+                  src={getDistrictImageUrl(district)}
                   alt={district.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
